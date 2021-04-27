@@ -8,6 +8,7 @@ import java.util.Random;
  * Individual tracks may be played.
  * 
  * @author David J. Barnes and Michael Kölling
+ * @author Kyle Balao
  * @version 2016.02.29
  */
 public class MusicOrganizer
