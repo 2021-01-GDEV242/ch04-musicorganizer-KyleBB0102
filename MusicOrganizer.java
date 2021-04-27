@@ -1,3 +1,5 @@
+
+
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -183,5 +185,21 @@ public class MusicOrganizer
  playTrack(index);
  }
  }
+ 
+ /**
+ * Play all tracks once in a random order.
+ */
+ public void randomPlayAll()
+ {
+ Random rand = new Random();
+ ArrayList<Track> leftToPlay = new ArrayList<Track>(tracks);
+ while(leftToPlay.size() > 0) {
+ int index = rand.nextInt(leftToPlay.size());
+ Track t = leftToPlay.remove(index);
+ player.playSample(t.getFilename());
+ }
+ }
 
 }
+ 
+ 
